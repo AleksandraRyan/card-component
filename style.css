@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Backgrounds */
+  --main-bg: hsl(233, 47%, 7%);
+  --card-bg: #23204e;
+  --opacity-bg: hsl(277, 56%, 59%);
+  --main-heading: hsl(0, 0%, 100%);
+  --main-pgraph: hsla(0, 0%, 100%, 0.75);
+  --stat-heading: hsla(0, 0%, 100%, 0.6);
+  --font-size: 15px;
+  /* Fonts */
+  --main-font: 'Inter', sans-serif;
+  --secondary-font: 'Lexend Deca', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 70vh;
+  width: 1440px;
+  display: block;
+  margin: auto;
+  background: var(--main-bg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+  height: 70vh;
+  width: 1070px;
+}
+
+.box1 {
+  background: var(--card-bg);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 h1 {
+  font-family: var(--main-font);
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-left: -29px;
+  color: var(--main-heading);
+}
+
+.box1 .main-paragraph {
+  font-family: var(--secondary-font);
+  color: var(--main-pgraph);
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 60px;
+}
+
+.box1 span {
+  color: var(--opacity-bg);
+}
+
+.box1 .stats {
+  list-style: none;
+  color: var(--main-heading);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.box1 .stats {
+  margin-right: 20px;
+  color: var(--main-pgraph);
+  font-size: 10px;
+  font-family: var(--secondary-font);
+  margin-bottom: 10px;
+}
+.box1 .stats h4 {
+  color: var(--main-heading);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--main-font);
+  margin-bottom: 5px;
+}
+
+.box1 .stats p {
+  font-size: 9px;
+}
+
+header {
+  background: black;
+  overflow: hidden;
+  background: rgb(128, 19, 179);
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+img {
+  opacity: 0.4;
+  object-fit: cover;
+}
