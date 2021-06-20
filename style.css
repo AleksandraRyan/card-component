@@ -19,7 +19,6 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,12 +26,13 @@ body {
 }
 
 .flex {
+  background: var(--main-bg);
   display: flex;
   align-content: center;
   justify-content: center;
-  margin: 100px;
   padding: 100px;
-  background: var(--main-bg);
+  margin: 100px auto;
+  /* max-width: 100%; */
 }
 
 .box1 {
@@ -109,6 +109,7 @@ img {
   opacity: 0.4;
   height: 55vh;
   object-fit: cover;
+  width: 100%;
 }
 
 /* Footer */
@@ -121,7 +122,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 50vw;
+    width: initial;
   }
 
   .box1 {
